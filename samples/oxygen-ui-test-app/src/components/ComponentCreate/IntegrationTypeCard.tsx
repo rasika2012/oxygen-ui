@@ -40,7 +40,7 @@ export default function IntegrationTypeCard({
     <Form.CardButton
       alignItems="center"
       onClick={onClick}
-      sx={{ width: "50%" }}
+      sx={{ width: "50%", height: "70vh" }}
     >
       <Form.CardHeader
         title={

@@ -31,6 +31,8 @@ import {
   AcrylicPurpleTheme,
   ClassicTheme,
   HighContrastTheme,
+  AetherGreyTheme,
+  AetherColorTheme,
   useColorScheme,
 } from "@wso2/oxygen-ui";
 import './docs.css';
@@ -114,6 +116,8 @@ const preview = {
           { value: 'acrylicPurple', title: 'Acrylic Purple' },
           { value: 'classic', title: 'Classic' },
           { value: 'highContrast', title: 'High Contrast' },
+          { value: 'aetherGrey', title: 'Aether Grey' },
+          { value: 'aetherColor', title: 'Aether Orange' },
         ],
         showName: true,
         dynamicTitle: true,
@@ -131,6 +135,8 @@ const preview = {
         { key: 'acrylicPurple', label: 'Acrylic Purple', theme: AcrylicPurpleTheme },
         { key: 'classic', label: 'Classic', theme: ClassicTheme },
         { key: 'highContrast', label: 'High Contrast', theme: HighContrastTheme },
+        { key: 'aetherGrey', label: 'Aether Grey', theme: AetherGreyTheme },
+        { key: 'aetherColor', label: 'Aether Orange', theme: AetherColorTheme },
       ], []);
 
       // Resolve system mode to actual light/dark based on OS preference

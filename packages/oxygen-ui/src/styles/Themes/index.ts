@@ -21,3 +21,6 @@ export { default as AcrylicOrangeTheme } from './AcrylicOrangeTheme';
 export { default as AcrylicPurpleTheme } from './AcrylicPurpleTheme';
 export { default as ClassicTheme } from './ClassicTheme';
 export { default as HighContrastTheme } from './HighContrastTheme';
+export { default as AetherBaseTheme } from './AetherBaseTheme';
+export { default as AetherGreyTheme } from './AetherGrey';
+export { default as AetherColorTheme } from './AetherColor';

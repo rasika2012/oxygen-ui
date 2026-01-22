@@ -31,7 +31,7 @@ export default function SampleIntegrationsSection({
   children,
 }: SampleIntegrationsSectionProps): JSX.Element {
   return (
-    <Form.Stack flexGrow={1}>
+    <Form.Stack flexShrink={1} width="80%" justifyContent="space-between">
       <Form.Header>{title}</Form.Header>
       <Form.Body>{description}</Form.Body>
       <Box display="flex" flexWrap="wrap" gap={2}>

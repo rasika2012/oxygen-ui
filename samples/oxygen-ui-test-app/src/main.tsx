@@ -21,7 +21,9 @@ import {
   AcrylicOrangeTheme,
   AcrylicPurpleTheme,
   ClassicTheme,
-  HighContrastTheme
+  HighContrastTheme,
+  AetherGreyTheme,
+  AetherColorTheme
 } from '@wso2/oxygen-ui'
 import { HashRouter, BrowserRouter } from 'react-router'
 import { StrictMode } from 'react'
@@ -41,6 +43,8 @@ createRoot(document.getElementById('root')!).render(
         { key: 'acrylicPurple', label: 'Acrylic Purple Theme', theme: AcrylicPurpleTheme },
         { key: 'highContrast', label: 'High Contrast Theme', theme: HighContrastTheme },
         { key: 'classic', label: 'Classic Theme', theme: ClassicTheme },
+        { key: 'aetherGrey', label: 'Aether Grey Theme', theme: AetherGreyTheme },
+        { key: 'aetherColor', label: 'Aether Orange Theme', theme: AetherColorTheme },
       ]}
       initialTheme="acrylicOrange"
     >

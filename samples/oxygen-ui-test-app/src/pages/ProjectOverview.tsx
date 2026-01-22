@@ -159,6 +159,7 @@ export default function ProjectOverview(): JSX.Element {
                   variant="contained"
                   startIcon={<Plus size={18} />}
                   sx={{ height: 40 }}
+                  onClick={() => navigate(`/projects/${projectId}/components/new`)}
                 >
                   Create
                 </Button>

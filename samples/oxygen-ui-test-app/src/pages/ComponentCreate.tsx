@@ -20,7 +20,7 @@ import { Button, Divider, Form, Stack } from '@wso2/oxygen-ui'
 import type { JSX } from 'react'
 import { useState } from 'react'
 import PageTitle from '../components/PageTitle'
-import { ExternalLinkIcon, Import, Network, WSO2 } from '@wso2/oxygen-ui-icons-react'
+import { ExternalLinkIcon, Import, Network, Plus, WSO2 } from '@wso2/oxygen-ui-icons-react'
 import {
   IntegrationTypeCard,
   IntegrationWizard,
@@ -39,7 +39,7 @@ export default function ComponentCreate(): JSX.Element {
           description="Follow the steps below to create a new integration"
         />
         <Stack direction="row" spacing={2}>
-          <Form.Stack direction="row" width="md">
+          <Form.Stack direction="row" width="100%">
             <IntegrationTypeCard
               icon={Network}
               title="Create a new Integration"
@@ -60,6 +60,18 @@ export default function ComponentCreate(): JSX.Element {
               title="Sample Integration 1"
               subtitle="Sample Integration 1"
               description="Sample Integration 1"
+              icon={<WSO2 />}
+            />
+            <SampleAppCard
+              title="Sample Integration 2"
+              subtitle="Sample Integration 2"
+              description="Sample Integration 2"
+              icon={<WSO2 />}
+            />
+            <SampleAppCard
+              title="Sample Integration 2"
+              subtitle="Sample Integration 2"
+              description="Sample Integration 2"
               icon={<WSO2 />}
             />
             <SampleAppCard
