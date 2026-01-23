@@ -61,7 +61,7 @@ export default function IntegrationWizard(): JSX.Element {
   };
 
   return (
-    <Form.Stack spacing={4}>
+    <Form.Stack spacing={4} pb={4}>
       {/* Repository Details Section */}
       <Form.Section>
         <Form.Subheader>Repository Details</Form.Subheader>
@@ -210,10 +210,10 @@ export default function IntegrationWizard(): JSX.Element {
 
       {/* Action Buttons */}
       <Form.Stack direction="row">
-        <Button variant="text" size="large">
+        <Button variant="text">
           Cancel
         </Button>
-        <Button variant="contained" endIcon={<CheckIcon size={16} />} size="large" onClick={handleDeploy}>
+        <Button variant="contained" onClick={handleDeploy}>
           Deploy Integration
         </Button>
       </Form.Stack>

@@ -16,11 +16,11 @@
  * under the License.
  */
 
-import { Button, Divider, Form, Stack } from '@wso2/oxygen-ui'
+import { Button, Divider, Form, Grid, Stack } from '@wso2/oxygen-ui'
 import type { JSX } from 'react'
 import { useState } from 'react'
 import PageTitle from '../components/PageTitle'
-import { ExternalLinkIcon, Import, Network, Plus, WSO2 } from '@wso2/oxygen-ui-icons-react'
+import { ExternalLinkIcon, Import, Network, WSO2 } from '@wso2/oxygen-ui-icons-react'
 import {
   IntegrationTypeCard,
   IntegrationWizard,
@@ -39,7 +39,7 @@ export default function ComponentCreate(): JSX.Element {
           description="Follow the steps below to create a new integration"
         />
         <Stack direction="row" spacing={2}>
-          <Form.Stack direction="row" width="100%">
+          <Form.Stack direction="row">
             <IntegrationTypeCard
               icon={Network}
               title="Create a new Integration"
@@ -56,41 +56,61 @@ export default function ComponentCreate(): JSX.Element {
           </Form.Stack>
           <Divider orientation="vertical" flexItem />
           <SampleIntegrationsSection>
-            <SampleAppCard
-              title="Sample Integration 1"
-              subtitle="Sample Integration 1"
-              description="Sample Integration 1"
-              icon={<WSO2 />}
-            />
-            <SampleAppCard
-              title="Sample Integration 2"
-              subtitle="Sample Integration 2"
-              description="Sample Integration 2"
-              icon={<WSO2 />}
-            />
-            <SampleAppCard
-              title="Sample Integration 2"
-              subtitle="Sample Integration 2"
-              description="Sample Integration 2"
-              icon={<WSO2 />}
-            />
-            <SampleAppCard
-              title="Sample Integration 2"
-              subtitle="Sample Integration 2"
-              description="Sample Integration 2"
-              icon={<WSO2 />}
-            />
-            <SampleAppCard
-              title="Sample Integration 2"
-              subtitle="Sample Integration 2"
-              description="Sample Integration 2"
-              icon={<WSO2 />}
-            />
-            <Form.CardButton alignItems="center" sx={{ width: 280 }}>
-              <Button variant="text" size="small" endIcon={<ExternalLinkIcon size={16} />}>
-                View more samples..
-              </Button>
-            </Form.CardButton>
+            <Grid container spacing={2}>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <SampleAppCard
+                  title="Sample Integration 1"
+                  subtitle="Sample Integration 1"
+                  description="Sample Integration 1"
+                  icon={<WSO2 />}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <SampleAppCard
+                  title="Sample Integration 2"
+                  subtitle="Sample Integration 2"
+                  description="Sample Integration 2"
+                  icon={<WSO2 />}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <SampleAppCard
+                  title="Sample Integration 2"
+                  subtitle="Sample Integration 2"
+                  description="Sample Integration 2"
+                  icon={<WSO2 />}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <SampleAppCard
+                  title="Sample Integration 2"
+                  subtitle="Sample Integration 2"
+                  description="Sample Integration 2"
+                  icon={<WSO2 />}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <SampleAppCard
+                  title="Sample Integration 2"
+                  subtitle="Sample Integration 2"
+                  description="Sample Integration 2"
+                  icon={<WSO2 />}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <SampleAppCard
+                  title="Sample Integration 2"
+                  subtitle="Sample Integration 2"
+                  description="Sample Integration 2"
+                  icon={<WSO2 />}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 6 }}>
+                <Button variant="text" size="small" endIcon={<ExternalLinkIcon size={16} />}>
+                  View more samples..
+                </Button>
+              </Grid>
+            </Grid>
           </SampleIntegrationsSection>
         </Stack>
       </Stack>

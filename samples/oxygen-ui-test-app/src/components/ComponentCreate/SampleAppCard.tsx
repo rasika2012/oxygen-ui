@@ -40,7 +40,7 @@ export default function SampleAppCard({
   hasQuickDeploy = true,
 }: SampleAppCardProps): JSX.Element {
   return (
-    <Form.CardButton sx={{ width: 280 }}>
+    <Form.CardButton sx={{ width: "100%" }}>
       <Form.CardContent>
         <Stack spacing={1}>
           <Stack direction="row" spacing={1}>
